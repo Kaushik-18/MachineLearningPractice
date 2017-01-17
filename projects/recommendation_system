@@ -1,0 +1,9 @@
+# LightFM is a Python implementation of a number of popular recommendation algorithms
+# for both implicit and explicit feedback
+from lightfm import LightFM
+import numpy as np
+from lightfm.datasets import fetch_movielens
+
+moviedata = fetch_movielens(min_rating=2)
+print(repr(moviedata['train']))
+
